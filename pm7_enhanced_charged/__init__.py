@@ -29,11 +29,12 @@ import sys
 def _startup_message():
     """Show helpful startup message"""
     if check_colab_environment():
-        print("🚀 PM7Calculator v0.2.0 loaded for Google Colab")
-        print("✨ New: Charge support for ions and proton affinity calculations")
-        print("Run install_colab_dependencies() first if MOPAC not installed")
+        print("🚀 PM7 Enhanced Charged v0.2.0 loaded for Google Colab")
+        print("✨ Features: Auto charge detection, proton affinity calculations")
+        print("💡 Tip: Use charge='auto' to auto-detect charges from SMILES")
+        print("📖 Run install_colab_dependencies() first if MOPAC not installed")
     else:
-        print("🚀 PM7Calculator v0.2.0 loaded")
+        print("🚀 PM7 Enhanced Charged v0.2.0 loaded")
         print("⚠️  This package is optimized for Google Colab")
 
 # Show message on import (but don't be annoying)
