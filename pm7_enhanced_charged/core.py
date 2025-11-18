@@ -549,13 +549,13 @@ class ColabPM7Calculator:
 # Global calculator instance
 _colab_calculator = None
 
-def calculate_pm7_properties_colab(smiles, charge=0, multiplicity=None, method="PM7", cleanup=True):
+def calculate_pm7_properties_colab(smiles, charge='auto', multiplicity=None, method="PM7", cleanup=True):
     """
-    One-line function to calculate PM7 properties in Colab with charge support.
+    One-line function to calculate PM7 properties in Colab with automatic charge detection.
 
     Args:
         smiles: SMILES string
-        charge: Molecular charge (default: 0, use 'auto' to detect from SMILES)
+        charge: Molecular charge (default: 'auto' to detect from SMILES, or specify 0, +1, -1, etc.)
         multiplicity: Spin multiplicity (default: None)
         method: Semi-empirical method
         cleanup: Whether to remove temporary files (default: True)
